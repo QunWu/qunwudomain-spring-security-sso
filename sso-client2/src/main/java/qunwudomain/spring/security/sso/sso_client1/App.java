@@ -1,13 +1,24 @@
 package qunwudomain.spring.security.sso.sso_client1;
 
-/**
- * Hello world!
- *
- */
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+@RestController
+@EnableOAuth2Sso
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	SpringApplication.run(App.class, args);
     }
+    
+    @GetMapping("/user")
+	public Authentication user(Authentication user) {
+		return user;
+	}
 }
