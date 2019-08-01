@@ -8,14 +8,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>sso-demo</name>
-	<url>http://maven.apache.org</url>
-
-	<properties>
-		<qunwudomain.security.version>1.0.0-SNAPSHOT</qunwudomain.security.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -49,6 +41,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
 	<modules>
 		<module>../sso-client1</module>
 		<module>../sso-client2</module>
