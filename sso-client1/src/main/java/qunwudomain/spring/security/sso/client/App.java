@@ -1,4 +1,4 @@
-package qunwudomain.spring.security.sso.sso_client1;
+package qunwudomain.spring.security.sso.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
